@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.4",
   "disabled": false,
   "title": "TRILOCALE RISTRUTTURATO IN PIENO CENTRO CON BOX",
   "address": "Via Cavour, 37 / Centro Tradate",
@@ -90,6 +90,21 @@
     {
       "title": "Per te, VENDITORE",
       "href": "/per-te-venditore",
+      "enabled": true
+    },
+    {
+      "title": "Dove siamo",
+      "href": "/dove-siamo",
+      "enabled": true
+    },
+    {
+      "title": "Link utili",
+      "href": "/link-utili",
+      "enabled": true
+    },
+    {
+      "title": "Link utili 2",
+      "href": "/link-utili2",
       "enabled": true
     }
   ],
@@ -356,5 +371,199 @@
     "agencyCell": "346 604 2314",
     "reviewsLabel": "Clicca qui e LEGGI tutte LE NOSTRE RECENSIONI",
     "reviewsScore": "4.9"
+  },
+  "doveSiamo": {
+    "enabled": false,
+    "heading": "Dove siamo",
+    "address": "",
+    "mapImage": null,
+    "generatedAt": null,
+    "lat": null,
+    "lng": null,
+    "servizi": []
+  },
+  "linkUtili": {
+    "enabled": true,
+    "heading": "Benvenuti in Domus Tua",
+    "bio": "❤️ Facile vendere e sicuro acquistare ❤️",
+    "avatarImage": "/images/logo-domustua.png",
+    "bannerImage": "/images/link-utili-banner.jpg",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/domustuaimmobiliare_tradate"
+      },
+      {
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@domustuaimmobiliare"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/@DOMUSTUASRLIMMOBILIARE"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/domustuaimmobiliaretradate/"
+      }
+    ],
+    "youtubeChannelId": "UCNkIKFUChLpMibKacUe7BXw",
+    "reviewsBadge": "+500 recensioni · ★4.9 su Google",
+    "reviewsLive": false,
+    "reviews": [
+      {
+        "name": "Cliente Domus Tua",
+        "rating": 5,
+        "text": "Recensione di esempio: verrà sostituita automaticamente dalle recensioni reali di Google una volta collegata l'integrazione."
+      }
+    ],
+    "links": [
+      {
+        "type": "sell",
+        "label": "🏡 Vuoi vendere casa? Scopri come funziona",
+        "url": "https://www.domustua.com/",
+        "enabled": true,
+        "image": "/images/link-utili-sell.jpg"
+      },
+      {
+        "type": "instagram",
+        "label": "📸 Guarda come vendiamo casa su Instagram",
+        "url": "https://www.instagram.com/domustuaimmobiliare_tradate",
+        "enabled": true,
+        "image": null,
+        "badge": "Segui su Instagram"
+      },
+      {
+        "type": "tiktok",
+        "label": "🎵 Guarda gli ultimi video su TikTok",
+        "url": "https://www.tiktok.com/@domustuaimmobiliare",
+        "enabled": true,
+        "image": null,
+        "badge": "Segui su TikTok"
+      },
+      {
+        "type": "youtube",
+        "label": "▶️ Scopri il metodo Domus Tua su YouTube",
+        "url": "https://www.youtube.com/@DOMUSTUASRLIMMOBILIARE",
+        "enabled": true,
+        "image": null,
+        "badge": "Iscriviti al canale"
+      },
+      {
+        "type": "facebook",
+        "label": "👍 Seguici su Facebook",
+        "url": "https://www.facebook.com/domustuaimmobiliaretradate/",
+        "enabled": true,
+        "image": null,
+        "badge": "Segui su Facebook"
+      },
+      {
+        "type": "whatsapp",
+        "label": "📲 Scrivici su WhatsApp per una valutazione",
+        "url": "https://wa.me/3466042314",
+        "enabled": true,
+        "image": null,
+        "badge": null
+      },
+      {
+        "type": "agency",
+        "label": "📍 Vieni a trovarci in agenzia",
+        "url": "https://www.google.com/maps?ll=45.711428,8.907599&z=15&t=m&hl=it&gl=IT&mapclient=embed&cid=1402630747648240075",
+        "enabled": true,
+        "image": "/images/link-utili-agenzia.jpg",
+        "badge": null
+      }
+    ]
+  },
+  "linkUtili2": {
+    "enabled": true,
+    "heading": "Benvenuti in Domus Tua",
+    "bio": "❤️ Facile vendere e sicuro acquistare ❤️",
+    "avatarImage": "/images/logo-domustua.png",
+    "bannerImage": "/images/link-utili-banner.jpg",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/domustuaimmobiliare_tradate"
+      },
+      {
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@domustuaimmobiliare"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/@DOMUSTUASRLIMMOBILIARE"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/domustuaimmobiliaretradate/"
+      }
+    ],
+    "youtubeChannelId": "UCNkIKFUChLpMibKacUe7BXw",
+    "reviewsBadge": "+500 recensioni · ★4.9 su Google",
+    "reviewsLive": false,
+    "reviews": [
+      {
+        "name": "Cliente Domus Tua",
+        "rating": 5,
+        "text": "Recensione di esempio: verrà sostituita automaticamente dalle recensioni reali di Google una volta collegata l'integrazione."
+      }
+    ],
+    "links": [
+      {
+        "type": "sell",
+        "label": "🏡 Vuoi vendere casa? Scopri come funziona",
+        "url": "https://www.domustua.com/",
+        "enabled": true,
+        "image": "/images/link-utili-sell.jpg"
+      },
+      {
+        "type": "instagram",
+        "label": "📸 Guarda come vendiamo casa su Instagram",
+        "url": "https://www.instagram.com/domustuaimmobiliare_tradate",
+        "enabled": true,
+        "image": null,
+        "badge": "Segui su Instagram"
+      },
+      {
+        "type": "tiktok",
+        "label": "🎵 Guarda gli ultimi video su TikTok",
+        "url": "https://www.tiktok.com/@domustuaimmobiliare",
+        "enabled": true,
+        "image": null,
+        "badge": "Segui su TikTok"
+      },
+      {
+        "type": "youtube",
+        "label": "▶️ Scopri il metodo Domus Tua su YouTube",
+        "url": "https://www.youtube.com/@DOMUSTUASRLIMMOBILIARE",
+        "enabled": true,
+        "image": null,
+        "badge": "Iscriviti al canale"
+      },
+      {
+        "type": "facebook",
+        "label": "👍 Seguici su Facebook",
+        "url": "https://www.facebook.com/domustuaimmobiliaretradate/",
+        "enabled": true,
+        "image": null,
+        "badge": "Segui su Facebook"
+      },
+      {
+        "type": "whatsapp",
+        "label": "📲 Scrivici su WhatsApp per una valutazione",
+        "url": "https://wa.me/3466042314",
+        "enabled": true,
+        "image": null,
+        "badge": null
+      },
+      {
+        "type": "agency",
+        "label": "📍 Vieni a trovarci in agenzia",
+        "url": "https://www.google.com/maps?ll=45.711428,8.907599&z=15&t=m&hl=it&gl=IT&mapclient=embed&cid=1402630747648240075",
+        "enabled": true,
+        "image": "/images/link-utili-agenzia.jpg",
+        "badge": null
+      }
+    ]
   }
 }

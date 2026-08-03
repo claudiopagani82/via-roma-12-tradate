@@ -1,11 +1,16 @@
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import { PhotoLayout } from '@/components/PhotoLayout'
-import { RedHeartIcon } from '@/components/RedHeartIcon'
+import { Lightbox } from '@/components/Lightbox'
 import property from '@/config/property.json'
 
 const p = property.bozzaProposta
 
 export default function BozzaPropostaPage() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+
   return (
     <PhotoLayout>
       <div className="bg-white/85 rounded-xl shadow-md p-6 w-full space-y-4">
@@ -16,7 +21,7 @@ export default function BozzaPropostaPage() {
         <ul className="space-y-3">
           {p.items.map((item, i) => (
             <li key={i} className="flex items-start gap-3">
-              <RedHeartIcon size={16} className="mt-0.5" />
+              <Image src="/images/cuore.png" alt="" width={16} height={14} className="flex-shrink-0 mt-0.5" />
               <span className="text-[#333333] text-sm font-semibold">{item}</span>
             </li>
           ))}
@@ -25,13 +30,26 @@ export default function BozzaPropostaPage() {
         {p.images.length > 0 && (
           <div className="space-y-4">
             {p.images.map((src, i) => (
-              <div key={i} className="relative w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              <button
+                key={i}
+                type="button"
+                onClick={() => setLightboxIndex(i)}
+                className="relative w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm cursor-pointer"
+              >
                 <Image src={src} alt={`Proposta ${i + 1}`} width={800} height={1100} className="w-full h-auto" />
-              </div>
+              </button>
             ))}
           </div>
         )}
       </div>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          images={p.images}
+          initialIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+        />
+      )}
     </PhotoLayout>
   )
 }

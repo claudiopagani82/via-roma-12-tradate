@@ -1,11 +1,16 @@
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import { PhotoLayout } from '@/components/PhotoLayout'
-import { RedHeartIcon } from '@/components/RedHeartIcon'
+import { Lightbox } from '@/components/Lightbox'
 import property from '@/config/property.json'
 
 const p = property.ape
 
 export default function ApePage() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+
   return (
     <PhotoLayout>
       <div className="bg-white/85 rounded-xl shadow-md p-6 w-full space-y-4">
@@ -16,7 +21,7 @@ export default function ApePage() {
         <ul className="space-y-3">
           {p.items.map((item, i) => (
             <li key={i} className="flex items-start gap-3">
-              <RedHeartIcon size={16} className="mt-0.5" />
+              <Image src="/images/cuore.png" alt="" width={16} height={14} className="flex-shrink-0 mt-0.5" />
               <span className="text-[#333333] text-sm font-semibold">{item}</span>
             </li>
           ))}
@@ -25,14 +30,28 @@ export default function ApePage() {
         {p.images.length > 0 && (
           <div className="space-y-4">
             {p.images.map((src, i) => (
-              <div key={i} className="relative w-full rounded-xl overflow-hidden" style={{ height: 360 }}>
+              <button
+                key={i}
+                type="button"
+                onClick={() => setLightboxIndex(i)}
+                className="relative w-full rounded-xl overflow-hidden cursor-pointer"
+                style={{ height: 360 }}
+              >
                 <Image src={src} alt={`APE ${i + 1}`} fill className="object-contain object-center" />
-              </div>
+              </button>
             ))}
             <p className="text-[#555555] text-xs text-center italic">{p.caption}</p>
           </div>
         )}
       </div>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          images={p.images}
+          initialIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+        />
+      )}
     </PhotoLayout>
   )
 }
