@@ -403,12 +403,83 @@
   "doveSiamo": {
     "enabled": true,
     "heading": "Dove siamo",
-    "address": "",
-    "mapImage": null,
-    "generatedAt": null,
-    "lat": null,
-    "lng": null,
-    "servizi": []
+    "address": "Via Roma 12 - Tradate",
+    "mapImage": "/images/dove-siamo-map-1785789791819.png",
+    "generatedAt": "2026-08-03T20:43:12.662Z",
+    "lat": 45.7076764,
+    "lng": 8.9147698,
+    "servizi": [
+      {
+        "markerNumber": 1,
+        "category": "scuola",
+        "label": "I.C.G.Galilei",
+        "distanceText": "0,3 km",
+        "durationText": "4 min"
+      },
+      {
+        "markerNumber": 2,
+        "category": "scuola",
+        "label": "Fondazione Asilo Infantile di Abbiate Guazzone",
+        "distanceText": "0,4 km",
+        "durationText": "5 min"
+      },
+      {
+        "markerNumber": 3,
+        "category": "supermercato",
+        "label": "Carrefour Express - Supermarket",
+        "distanceText": "0,8 km",
+        "durationText": "11 min"
+      },
+      {
+        "markerNumber": 4,
+        "category": "supermercato",
+        "label": "Carrefour Market - Tradate Albisetti",
+        "distanceText": "1,2 km",
+        "durationText": "17 min"
+      },
+      {
+        "markerNumber": 5,
+        "category": "farmacia",
+        "label": "Lafarmacia. Fior di Loto",
+        "distanceText": "0,7 km",
+        "durationText": "10 min"
+      },
+      {
+        "markerNumber": 6,
+        "category": "farmacia",
+        "label": "Farmacia di Abbiate Guazzone",
+        "distanceText": "0,8 km",
+        "durationText": "11 min"
+      },
+      {
+        "markerNumber": 7,
+        "category": "parcheggio",
+        "label": "Parcheggio pubblico",
+        "distanceText": "1,0 km",
+        "durationText": "14 min"
+      },
+      {
+        "markerNumber": 8,
+        "category": "parcheggio",
+        "label": "Parcheggio",
+        "distanceText": "1,0 km",
+        "durationText": "14 min"
+      },
+      {
+        "markerNumber": 9,
+        "category": "stazione",
+        "label": "Tradate",
+        "distanceText": "0,8 km",
+        "durationText": "11 min"
+      },
+      {
+        "markerNumber": 10,
+        "category": "stazione",
+        "label": "Abbiate Guazzone",
+        "distanceText": "1,0 km",
+        "durationText": "13 min"
+      }
+    ]
   },
   "linkUtili": {
     "enabled": true,
