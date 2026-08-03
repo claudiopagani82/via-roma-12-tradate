@@ -283,14 +283,21 @@
     "sectionNumber": "",
     "sectionTitle": "RELAZIONE TECNICA",
     "items": [
-      "Relazione tecnica descrittiva dell'immobile",
-      "Stato di conservazione delle strutture",
-      "Descrizione interventi di ristrutturazione 2021"
-    ],
-    "images": [
-      "/images/rel-tecnica-image1.jpg",
-      "/images/rel-tecnica-image2.jpg",
-      "/images/rel-tecnica-image3.jpg"
+      {
+        "label": "Relazione tecnica descrittiva dell'immobile",
+        "enabled": true,
+        "documentUrl": null
+      },
+      {
+        "label": "Stato di conservazione delle strutture",
+        "enabled": true,
+        "documentUrl": null
+      },
+      {
+        "label": "Descrizione interventi di ristrutturazione 2021",
+        "enabled": true,
+        "documentUrl": null
+      }
     ]
   },
   "documentiCondominiali": {
@@ -298,10 +305,26 @@
     "sectionNumber": "",
     "sectionTitle": "DOCUMENTI CONDOMINIALI",
     "items": [
-      "Regolamento condominiale",
-      "Verbale ultima assemblea condominiale",
-      "Piano di riparto spese condominiali",
-      "Attestazione assenza morosità condominiale"
+      {
+        "label": "Regolamento condominiale",
+        "enabled": true,
+        "documentUrl": null
+      },
+      {
+        "label": "Verbale ultima assemblea condominiale",
+        "enabled": true,
+        "documentUrl": null
+      },
+      {
+        "label": "Piano di riparto spese condominiali",
+        "enabled": true,
+        "documentUrl": null
+      },
+      {
+        "label": "Attestazione assenza morosità condominiale",
+        "enabled": true,
+        "documentUrl": null
+      }
     ],
     "images": [
       "/images/doc-condominio-image1.jpg",
@@ -373,7 +396,7 @@
     "reviewsScore": "4.9"
   },
   "doveSiamo": {
-    "enabled": false,
+    "enabled": true,
     "heading": "Dove siamo",
     "address": "",
     "mapImage": null,
